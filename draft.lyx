@@ -1,0 +1,472 @@
+#LyX 2.2 created this file. For more info see http://www.lyx.org/
+\lyxformat 508
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass book
+\begin_preamble
+\usepackage[hidelinks]{hyperref}
+\usepackage{xcolor}
+\definecolor{linkblue}{HTML}{0077CC}
+\hypersetup{
+  colorlinks   = true, %Colours links instead of ugly boxes
+  urlcolor     = blue, %Colour for external hyperlinks
+  linkcolor    = linkblue, %Colour of internal links
+  citecolor   = red    %Colour of citations
+}
+\usepackage{listings}
+\lstset{language=Python}
+\usepackage{minted}
+\renewcommand{\theFancyVerbLine}{\ttfamily \textcolor[RGB]{0,0,0}{\normalsize \oldstylenums{\arabic{FancyVerbLine}}}}
+\end_preamble
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "Liberation Sans"
+\font_sans "default" "Liberation Sans"
+\font_typewriter "default" "DejaVu Sans Mono"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts true
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing onehalf
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification false
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 1in
+\topmargin 1in
+\rightmargin 1in
+\bottommargin 1in
+\secnumdepth 0
+\tocdepth 2
+\paragraph_separation skip
+\defskip 1.5theight%
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+The Truth About [Google,Facebook,Microsoft,Apple,Amazon,etc]
+\end_layout
+
+\begin_layout Author
+Evil software mega-corporations have been taking advantage of us for decades
+ now blah blah.
+\end_layout
+
+\begin_layout Standard
+Google breaks its motto, 'Don't be Evil.' FB does [REDACTED].
+ Fundamentally, money corrupts people blah blah.
+\end_layout
+
+\begin_layout Subsection*
+What is Proprietary Software?
+\end_layout
+
+\begin_layout Standard
+Any software which does not disclose its source code under a permissive
+ license is considered proprietary software.
+ Some examples are Google, Google Chrome, Facebook, Photoshop, Microsoft
+ Windows, and macOS.
+ Proprietary software is usually sold for profit, or released as a free
+ (as in money) service in exchange for user information.
+ Whilst there is a wealth of ethically developed proprietary software, many
+ of the most commonly known software companies are exteremely exploitative
+ and take advantage of their users.
+ There are many dangers to this kind of proprietary software.
+\end_layout
+
+\begin_layout Subsection*
+The Cost of Proprietary Software
+\end_layout
+
+\begin_layout Standard
+Due to the easily-reproducible nature of software, software companies which
+ create unique products are easily able to create a monopoly.
+ From many user's perspectives, there is only one search engine, only one
+ image editor, and only a small handful of social media networks and operating
+ systems.
+ This is excellent for the pockets of technology company executives, but
+ not good for consumers and entrepreneurs.
+ As is to be expected with a monopoly or oligarchy, companies can jack up
+ the prices for their software to whatever they wish, and consumers can
+ do very little about it.
+ In the case of Microsoft Windows, very few users know of any alternatives
+ other than macOS, so Microsoft can do whatever they want to their customers.
+ Recently, Microsoft started adding targeted advertisements to the Start
+ Menu of their already costly operating system, and now have irremovable
+ snooping tools that send Microsoft details about everything from your computer
+ hardware to the amount of photos you have viewed in their 'Photos' application
+ in the past day.
+ In one report, the smallest possible amount of separate messages you can
+ configure Windows to send to Microsoft is in the 5000s.
+ Also, you can no longer disable forced updates, so you are totally at the
+ mercy of whatever Microsoft throws at you.
+\end_layout
+
+\begin_layout Standard
+As well as Windows, the various services Google offers spy on users to an
+ unacceptable degree.
+ Google stores every search you ever make, the link to every website you
+ ever visit in Google Chrome, and in other browsers, analytics from millions
+ of websites.
+ Google Analytics, a 'free' service that measures various statistics such
+ as page views and location heatmaps, has its code embedded in millions
+ of major websites, meaning that even without a Google account, using a
+ browser other than Google Chrome, Google can still generate a comprehensive
+ list of websites you visit and create targeted advertisements based on
+ them.
+ Google has even taken it to the next level, and created entire operating
+ systems, (ChromeOS, Android and the unfinished mess Fuschia) that have
+ spyware integrated into the operating systems themselves.
+ Don't be mistaken - Google is an advertising company, not a search engine,
+ not a cloud service provider, not an operating system development firm.
+\end_layout
+
+\begin_layout Standard
+Some software, like Photoshop, isn't renowned for spying or targeted advertising
+, but rather comes with a massive up-front cost.
+ Adobe Photoshop and Microsoft's Visual Studio (code editor) each cost upwards
+ of $1000 per year for a license.
+ This locks out a massive market of users in the third world who can't afford
+ these software pacakges.
+ Also, because of patent law surrounding software, companies can patent
+ broad concepts and create a monopoly that cannot legally be broken.
+ This leads to software classed as 'industry standards' which raise the
+ bar even higher for many potential users.
+\end_layout
+
+\begin_layout Standard
+Proprietary software doesn't respect its users.
+ It takes advantage of users and spies on them, advertises relentlessly
+ to them, and alienates people from poorer backgrounds and societies.
+ If only there was a solution...
+\end_layout
+
+\begin_layout Subsection*
+What Can I Do?
+\end_layout
+
+\begin_layout Standard
+The best thing you can do to stop companies like Google, Microsoft and Facebook
+ from becoming even worse than they already are is to stop using their products,
+ and transition to using free and open source software.
+ This comes with a myriad of benefits, including not being subjected to
+ the unethical pratices of major software corporations, and saving a significant
+ amount of time and money, with the added bonus of equally good software.
+\end_layout
+
+\begin_layout Standard
+Next: What is Open Source?
+\end_layout
+
+\begin_layout Section*
+What is Open Source Software?
+\end_layout
+
+\begin_layout Standard
+Open Source means that the source code of a software package is publicly
+ available and free for anyone to use.
+ Some well known examples of open source software include Firefox, Linux,
+ and MediaWiki, the software that powers Wikipedia.
+ There are two main types of open source software.
+ Some open source software is proprietary, meaning you must obtain a license
+ to use it commercially.
+ This type of software is not considered to be 'open source' by many, as
+ the source code is not truly open for anyone to use as they wish.
+ Usually, when people talk about open source software, they are talking
+ about Free and Open Source Software (abbreviated as FOSS.) Note that the
+ terms "Free software", "FOSS" and "Open Source Software" are used interchangeab
+ly.
+ Free software is free as in freedom, not just free as in price.
+ In order to be classed as truly free software, a software package must
+ follow the four freedoms, listed below.
+\end_layout
+
+\begin_layout Subsection*
+The Four Freedoms
+\end_layout
+
+\begin_layout Standard
+• The freedom to run the program as you wish, for any purpose.
+ • The freedom to study how the program works, and change it so it does
+ your computing as you wish.
+ Access to the source code is a precondition for this.
+ • The freedom to redistribute copies so you can help your neighbour.
+ • The freedom to distribute copies of your modified versions to others.
+ By doing this you can give the whole community a chance to benefit from
+ your changes.
+ Access to the source code is a precondition for this.
+\end_layout
+
+\begin_layout Standard
+Why Use Open Source Software?
+\end_layout
+
+\begin_layout Standard
+Open source software is essential as it respects the user.
+ Because anyone can view the source code, anyone can audit free software
+ to ensure that proper security measures are taken and that no malicious
+ code is present, and many free software advocates do.
+ The GNU/Linux and BSD operating systems are used extensively by many major
+ technology companies for their servers, as they are extremely fast and
+ secure.
+ Because many more people view the source code than in proprietary software
+ settings, bugs and security flaws are found much more quickly, and often
+ patched within hours.
+\end_layout
+
+\begin_layout Standard
+Open source software is often much faster and supports many more platforms
+ than proprietary software.
+ Because anybody can contribute to free software projects, anyone can optimise
+ and improve software to make it run on older hardware, or even different
+ operating systems.
+ Porting software to another operating system often requires minimal effort,
+ and anyone who wishes to extend support for free software to their platform
+ can easily do so; where they otherwise might have to open a support ticket
+ for proprietary software and get a response along the lines of their feature
+ request being denied due to lack of interest.
+\end_layout
+
+\begin_layout Standard
+Open source software does not spy on you.
+ With the rise of advertising companies like Google, privacy can be a massive
+ concern.
+ Google's Chrome browser sends browsing history and usage statistics to
+ Google, and uses that data for targeted advertising.
+ Not only is this exploiting users, but if the security of a firm like Google
+ were compromised, everyone's data would be compromised too.
+ Additionally, because data-aggregation firms do not release the source
+ code or even details of their security mechanisms, you can never be sure
+ who to trust.
+ Over 5 billion online accounts are known to have been compromised because
+ of poor security practices in proprietary software.
+\end_layout
+
+\begin_layout Standard
+Free software is free.
+ While companies like Adobe charge approximately $1000 a year for Photoshop,
+ free software projects like Krita and the GNU Image Manipulation Program
+ (GIMP) are completely free.
+ It is extremely expensive for students and educational institutions to
+ pay for software licensing, and free software can save people all over
+ the world thousands of dollars.
+ There is a massive variety of free software alternatives which are as good,
+ or often better than their proprietary alternatives.
+ Some other great examples of free software alternatives are Blender, a
+ FOSS 3D modeller, Audacity, a FOSS audio editor, Krita, a FOSS image editor
+ and painting tool, and KDenLive, a FOSS video editor on par with iMovie.
+\end_layout
+
+\begin_layout Subsubsection*
+On "Software Communism"
+\end_layout
+
+\begin_layout Standard
+Bill Gates is known to pass the Free Software movement as 'software communism.'
+ This term perfectly describes the free software movement.
+ There is one slight difference between the world of software and the 'real'
+ world.
+ Unlike the real world, software takes almost no effort to reproduce; once
+ you have written the source code for a piece of software (the blueprint,)
+ infinite versions of the software can be copied and distributed worldwide.
+ This means that so called 'software communism' is actually possible, as
+ there is an infinite supply of resources.
+ However, proprietary software companies take advantage of their customers
+ by charging high prices despite the infinite supply of program copies.
+ By creating free software to compete with their proprietary equivalents,
+ we can bring down the prices and force companies performing unethical spying
+ to desist at the risk of losing their customers.
+ By using free software, we are not only encouraging proprietary software
+ companies to behave ethically, we are also getting high quality community
+ built software for free!
+\end_layout
+
+\begin_layout Subsection*
+Skeptical?
+\end_layout
+
+\begin_layout Standard
+Why do people create free software? Many reasons.
+ Many programmers, myself included, enjoy programming.
+ Some people write and maintain free software projects for professional
+ reasons.
+ Some people write free software because they are sick of the inadequacies
+ of proprietary software.
+ Some write free software to give back to the community.
+ A great article on the motives of writing free software is available on
+ the Free Software Foundation's website at https://www.gnu.org/philosophy/fs-motiv
+es.html
+\end_layout
+
+\begin_layout Standard
+How does software developed without funding become as useful as commercialised
+ software? Many people are sponsored or paid full time to write free software
+ by corporations in need of better software.
+ Some, like the maintainers of the Linux Mint operating system, receive
+ enough donations to live off.
+ Many people who are skeptical of open source software don't recognise the
+ generosity of many people.
+ Even if only 1 in 10 000 people writes free software as a hobby, that's
+ 70 000 people.
+ The amount of people who are able to benefit from free software is massive,
+ and often corporations will sponsor free software projects that they depend
+ on for their products and services to function.
+ There are multiple entire families of operating systems that are entirely[1]
+ free and open source.
+ Ubuntu GNU/Linux, Linux Mint, Fedora, openSUSE, Arch Linux, Gentoo GNU/Linux,
+ FreeBSD, OpenBSD and hundreds of other derivatives are all built by the
+ free software community.
+ If you doubt their security, consider OpenBSD, which has had 2 security
+ vulnerabilities in its decades long history.
+ Firefox, a fully featured FOSS browser, is built by the non-profit organisation
+ Mozilla, and is better than Chrome in every way[2].
+\end_layout
+
+\begin_layout Standard
+1: Aside from some proprietary drivers for wifi cards and the likes 2: Firefox
+ is faster than Chrome, uses less memory than Chrome, uses less battery
+ than Chrome, uses less storage space than Chrome, and does not spy on you
+ like Chrome.
+ It supports all of the browser standards that Chrome does, and more.
+\end_layout
+
+\begin_layout Section*
+Open Source Software Library
+\end_layout
+
+\begin_layout Standard
+Microsoft Office Suite, Google Docs/Slides/Sheets: LibreOffice Suite, OpenOffice
+ Suite Microsoft Windows: GNU/Linux, FreeBSD Google: DuckDuckGo, StartPage
+ Google Drive, OneDrive, Dropbox: SpiderOak, ownCloud, Nextcloud, Syncthing,
+ IPFS Google Docs: Etherpad Youtube: D.Tube, Newpipe, Hooktube, youtube-dl
+ Photoshop: Krita, GNU Image Manipulation Program Google Drawings: Inkscape
+ Visual Studio: CodeBlocks, Notepad++, Atom Google Chrome, Internet Explorer,
+ Microsoft Edge: Firefox, Waterfox, Qutebrowser iMovie etc: KDenLive GMail:
+ self-hosted, cock.li Evernote: Cherrytree Whatsapp, Facebook Messenger,
+ Discord: Riot, IRC, Matrix, XMPP Google Classroom: Moodle Outlook: Thunderbird
+ Calendar: blank Google Earth: KDE Marble
+\end_layout
+
+\begin_layout Standard
+Other free software: Blender, Audacity, LMMS, Calibre, MineTest, Anki, Tiled
+\end_layout
+
+\begin_layout Standard
+Spotlight
+\end_layout
+
+\begin_layout Standard
+Firefox Web Browser Features: - Great battery life - Extremely fast - No
+ spying Replaces: Chrome, Edge, IE, Safari Supported on: Linux, Windows,
+ macOS, Android, iOS
+\end_layout
+
+\begin_layout Standard
+LibreOffice Office Suite Features: - Supports importing and exporting Microsoft
+ Office documents - Boasts a word processor, spreadsheets, slideshow presentatio
+ns, designing tool, math formula editor, and a database - Very fast Replaces:
+ Microsoft Word, Powerpoint, Excel, Publisher Supported on: Linux, Windows,
+ macOS
+\end_layout
+
+\begin_layout Standard
+Krita Image Editor Features: - Photoshop-like interface - Supports many
+ image formats - Excellent drawing tool Replaces: Adobe Photoshop Supported
+ on: Linux, Windows, macOS Alternatives: GNU Image Manipulation Program
+\end_layout
+
+\begin_layout Standard
+GNU/Linux Operating System Family Features: - Unrivalled security[except
+ by OpenBSD] - Runs extremely well on old hardware - Enormous range of choices
+ - No spying - Doesn't cost a dime - Supports a massive amount of software
+ (Steam, many games, all open source software, and proprietary software
+ that isn't officially supported, like Photoshop, can be run through WINE,
+ a wrapper that allows you to run Windows applications in Linux.) - Did I
+ mention how secure it is? - Very user friendly - Accessible - Supports
+ many languages Replaces: Microsoft Windows, macOS Alternatives: FreeBSD,
+ OpenBSD
+\end_layout
+
+\begin_layout Standard
+Riot Internet Messaging Features: - Offers encrpyted chat - Supports group
+ chats and direct messages - Voice and video calls - Integrated widgets
+ - Supports image and file uploads - Supports rich text - Integrates with
+ IRC Replaces: Whatsapp, FB messenger, Discord, other stuff Alternatives:
+ Signal Private Messenging
+\end_layout
+
+\begin_layout Standard
+Blender 3D Modelling
+\end_layout
+
+\begin_layout Standard
+Thunderbird KDE Marble Inkscape Notepad++/Notepadqq Atom GIMP KDenLive Moodle
+ Etherpad Newpipe LineageOS Signal Private Messenger
+\end_layout
+
+\begin_layout Standard
+More ethical alternatives
+\end_layout
+
+\begin_layout Standard
+ProtonMail - ****ing amazing DuckDuckGo, Startpage - great Spideroak - great
+ 
+\end_layout
+
+\begin_layout Section
+More Information
+\end_layout
+
+\begin_layout Standard
+fsf.org, gnu.org etc
+\end_layout
+
+\end_body
+\end_document
