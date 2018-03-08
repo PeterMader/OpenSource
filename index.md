@@ -1,4 +1,21 @@
 
+<header>
+	<span class='title'>The Problem With Proprietary Software</span>
+	<nav>
+		[Proprietary Software](#/proprietary-software/)
+		[Open Source](#/open-source/)
+		[Free Software Library](#/free-software-library/)
+		[More Information](#/more-info/)
+	</nav>
+</header>
+
+<div class='main-header'>
+	<h1 id='/proprietary-software/'>The Problem With <span class='corporation-slide'>Google</span></h1>
+</div>
+
+<p class='mission-statement'>Evil software mega-corporations have been taking advantage of us for decades.</p>
+<p class='mission-detail'>Google breaks its motto, 'Don't be Evil.' FB does [REDACTED]. Fundamentally, money corrupts people blah blah.</p>
+
 ## What is Proprietary Software?
 
 Proprietary software is any software which is copyrighted by a company or individual and does not release its <abbr title="'Source code' is the programming code written by programmers that can be converted into executable files, like .exe files in Windows">source code</abbr> under a <abbr title="Permissive licenses allow you to do what you wish with the software or source code. Well known licenses include the GNU GPL and the MIT licenses.">permissive license.</abbr> Some examples of proprietary software include Microsoft Windows, Photoshop, Facebook, and Google Chrome. Proprietary software is usually sold for profit (like Photoshop), released as a free (as in money) service in exchange for user information (like Google), or sold and used for information harvesting (like Microsoft Windows.)
@@ -19,7 +36,9 @@ Some software, like Photoshop, isn't renowned for spying or targeted advertising
 
 The best thing you can do to stop companies like Google, Microsoft and Facebook from becoming even worse than they already are is to stop using their products, and transition to using free and open source software. This comes with a myriad of benefits, including not being subjected to the unethical pratices of major software corporations, and saving a significant amount of time and money, with the added bonus of equally good software.
 
-# Open Source Software
+<div class='header'>
+	<h1 id='/open-source/'>Open Source Software</h1>
+</div>
 
 ## What is Open Source Software?
 
@@ -39,7 +58,9 @@ Open Source means that the source code of a software package is publicly availab
 
 **How can free software possibly rival proprietary software?** In addition to professional and amateur programmers working on free software in their spare time, many people are sponsored or paid full time to write free software by corporations in need of better software. Some, like the maintainers of the Linux Mint operating system, receive enough donations to live off. The Red Hat Linux operating system is FOSS and commercial at the same time, as they make money from tech support. Even if only 1 in 100 000 people write free software as a hobby, that's 76 000 people.<sup id='a4'>[[4](#f4)]</sup> The amount of people who are able to benefit from free software is massive; and often companies will sponsor free software projects that they depend on for their products and services to function. For example, the developer of [Tiled](http://www.mapeditor.org/), a FOSS map editor for video game development, receives almost $2000 a month from donations,<sup id='a9'>[[9](#f9)]</sup> enough to fund two working days a week development for it.
 
-# Open Source Software Library
+<div class='header'>
+	<h1 id='/free-software-library/'>Free Software Library</h1>
+</div>
 
 <ol>
 	<li id='f1'>https://thehackernews.com/2016/02/microsoft-windows10-privacy.html [↩](#a1)</li>
@@ -52,3 +73,7 @@ Open Source means that the source code of a software package is publicly availab
 	<li id='f8'>https://www.adobe.com/creativecloud/plans.html?single_app=photoshop [↩](#a8)</li>
 	<li id='f9'>https://www.patreon.com/bjorn [↩](#a9)</li>
 </ol>
+
+<div class='header'>
+	<h1 id='/more-info/'>More Information</h1>
+</div>
