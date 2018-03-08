@@ -1,5 +1,5 @@
-#LyX 2.3 created this file. For more info see http://www.lyx.org/
-\lyxformat 544
+#LyX 2.2 created this file. For more info see http://www.lyx.org/
+\lyxformat 508
 \begin_document
 \begin_header
 \save_transient_properties true
@@ -36,8 +36,6 @@
 \font_osf false
 \font_sf_scale 100 100
 \font_tt_scale 100 100
-\use_microtype false
-\use_dash_ligatures true
 \graphics default
 \default_output_format default
 \output_sync 0
@@ -67,7 +65,6 @@
 \suppress_date false
 \justification false
 \use_refstyle 1
-\use_minted 0
 \index Index
 \shortcut idx
 \color #008000
@@ -80,10 +77,7 @@
 \tocdepth 2
 \paragraph_separation skip
 \defskip 1.5theight%
-\is_math_indent 0
-\math_numbering_side default
-\quotes_style english
-\dynamic_quotes 0
+\quotes_language english
 \papercolumns 1
 \papersides 1
 \paperpagestyle default
@@ -109,7 +103,7 @@ LatexCommand tableofcontents
 
 \end_layout
 
-\begin_layout Paragraph
+\begin_layout Author
 Evil software mega-corporations have been taking advantage of us for decades.
 \end_layout
 
@@ -186,7 +180,6 @@ In the case of Microsoft Windows, very few users know of any alternatives
 \begin_inset CommandInset citation
 LatexCommand cite
 key "key-7"
-literal "true"
 
 \end_inset
 
@@ -199,7 +192,6 @@ literal "true"
 \begin_inset CommandInset citation
 LatexCommand cite
 key "key-1,key-2"
-literal "true"
 
 \end_inset
 
@@ -242,7 +234,6 @@ Some software, like Photoshop, isn't renowned for spying or targeted advertising
 \begin_inset CommandInset citation
 LatexCommand cite
 key "key-12"
-literal "true"
 
 \end_inset
 
@@ -251,7 +242,6 @@ literal "true"
 \begin_inset CommandInset citation
 LatexCommand cite
 key "key-11"
-literal "true"
 
 \end_inset
 
@@ -317,7 +307,6 @@ used *extensively by many major technology companies*
 \begin_inset CommandInset citation
 LatexCommand cite
 key "key-3"
-literal "true"
 
 \end_inset
 
@@ -383,7 +372,6 @@ There is no shortage of professional musicians who keep at it even though
 \begin_inset CommandInset citation
 LatexCommand cite
 key "key-5"
-literal "true"
 
 \end_inset
 
@@ -408,7 +396,6 @@ How can free software possibly rival proprietary software?
 \begin_inset CommandInset citation
 LatexCommand cite
 key "key-4"
-literal "true"
 
 \end_inset
 
@@ -421,7 +408,6 @@ literal "true"
 \begin_inset CommandInset citation
 LatexCommand cite
 key "key-13"
-literal "true"
 
 \end_inset
 
@@ -436,7 +422,6 @@ literal "true"
 \begin_inset CommandInset bibitem
 LatexCommand bibitem
 key "key-1"
-literal "true"
 
 \end_inset
 
@@ -447,7 +432,6 @@ https://thehackernews.com/2016/02/microsoft-windows10-privacy.html
 \begin_inset CommandInset bibitem
 LatexCommand bibitem
 key "key-2"
-literal "true"
 
 \end_inset
 
@@ -459,7 +443,6 @@ ows-10-just-cant-stop-talking-to-microsoft/
 \begin_inset CommandInset bibitem
 LatexCommand bibitem
 key "key-3"
-literal "true"
 
 \end_inset
 
@@ -470,7 +453,6 @@ https://www.wired.com/2015/09/microsoft-using-linux-run-cloud/
 \begin_inset CommandInset bibitem
 LatexCommand bibitem
 key "key-4"
-literal "true"
 
 \end_inset
 
@@ -481,7 +463,6 @@ http://www.worldometers.info/world-population/
 \begin_inset CommandInset bibitem
 LatexCommand bibitem
 key "key-5"
-literal "true"
 
 \end_inset
 
@@ -492,7 +473,6 @@ http://www.linfo.org/manifesto.html
 \begin_inset CommandInset bibitem
 LatexCommand bibitem
 key "key-7"
-literal "true"
 
 \end_inset
 
@@ -504,7 +484,6 @@ u-and-how-to-stop-them.html
 \begin_inset CommandInset bibitem
 LatexCommand bibitem
 key "key-11"
-literal "true"
 
 \end_inset
 
@@ -515,7 +494,6 @@ https://www.visualstudio.com/vs/pricing/
 \begin_inset CommandInset bibitem
 LatexCommand bibitem
 key "key-12"
-literal "true"
 
 \end_inset
 
@@ -526,7 +504,6 @@ https://www.adobe.com/creativecloud/plans.html?single_app=photoshop
 \begin_inset CommandInset bibitem
 LatexCommand bibitem
 key "key-13"
-literal "true"
 
 \end_inset
 

@@ -1,0 +1,19 @@
+{
+  "name": "opensource",
+  "version": "1.0.0",
+  "description": "Open Source Software advocacy website",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Tobsta/OpenSource.git"
+  },
+  "author": "Oliver Balfour",
+  "license": "SEE LICENSE IN LICENSE.md",
+  "bugs": {
+    "url": "https://github.com/Tobsta/OpenSource/issues"
+  },
+  "homepage": "https://github.com/Tobsta/OpenSource#readme",
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "marked": "^0.3.17"
+  }
+}
