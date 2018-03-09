@@ -25,5 +25,5 @@ gulp.task('scss', () =>
 );
 
 gulp.task('watch', () =>
-	gulp.watch('index.*', ['default'])
+	gulp.watch('*', ['default'])
 );
