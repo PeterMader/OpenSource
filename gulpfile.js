@@ -8,12 +8,15 @@ const sass = require('gulp-sass');
 
 gulp.task('default', ['scss', 'md']);
 
-gulp.task('md', () => {
-	let parsed = marked(fs.readFileSync(path.join(__dirname, 'index.md'), 'utf-8')),
-		template = fs.readFileSync(path.join(__dirname, 'template.html'), 'utf-8'),
-		index = template.replace('<INCLUDE/>', parsed);
-	fs.writeFileSync(path.join(__dirname, 'index.html'), index);
-});
+gulp.task('md', () =>
+	fs.writeFileSync(
+		path.join(__dirname, 'index.html'),
+		// marked doesn't parse the DOCTYPE declaration properly, insert here instead
+		'<!DOCTYPE html>\n' + marked(
+			fs.readFileSync(path.join(__dirname, 'main.html'), 'utf-8')
+		)
+	)
+);
 
 gulp.task('scss', () =>
 	gulp.src('index.scss')
@@ -21,6 +24,6 @@ gulp.task('scss', () =>
 		.pipe(gulp.dest('.'))
 );
 
-gulp.task('watch', () => {
-	gulp.watch('index.*', ['default']);
-});
+gulp.task('watch', () =>
+	gulp.watch('index.*', ['default'])
+);
