@@ -1,14 +1,34 @@
+
+// variables
+$header-background-color: blue;
+$header-text-color: white;
+$main-header-background-color: darken($header-background-color, 10%);
+
+// default styles
+h1,h2,h3 {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 300;
+	margin: 0;
+}
+p {
+	font-family: 'Roboto', sans-serif;
+	line-height: 1.5;
+}
+
+// header
+
 %header {
 	width: 100%;
 	height: 60%;
-	background: lightblue;
-
-}
-
-.header {
-	@extend %header;
+	background: $header-background-color;
+	color: $header-text-color;
 }
 
 .main-header {
+	@extend %header;
+	background: $main-header-background-color;
+}
+
+.header {
 	@extend %header;
 }
