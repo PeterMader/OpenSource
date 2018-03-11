@@ -12,9 +12,12 @@ const postcss = require('gulp-postcss');
 const autoprefixer = require('autoprefixer');
 const cssnano = require('cssnano');
 
-gulp.task('default', ['scss', 'md']);
+const browserSync = require('browser-sync').create();
 
-gulp.task('md', () =>
+
+gulp.task('default', ['html', 'css', 'js']);
+
+gulp.task('html', done => {
 	fs.writeFileSync(
 		path.join(__dirname, 'index.html'),
 		// marked doesn't parse the DOCTYPE declaration properly, insert here instead
@@ -24,10 +27,11 @@ gulp.task('md', () =>
 			collapseWhitespace: true,
 			removeComments: true
 		})
-	)
-);
+	);
+	done();
+});
 
-gulp.task('scss', () =>
+gulp.task('css', () =>
 	gulp.src('index.scss')
 		.pipe(sass())
 		.pipe(postcss([
@@ -35,8 +39,22 @@ gulp.task('scss', () =>
 			cssnano()
 		]))
 		.pipe(gulp.dest('.'))
+		.pipe(browserSync.stream())
 );
 
-gulp.task('watch', () =>
-	gulp.watch('*', ['default'])
-);
+gulp.task('js', done => {
+	browserSync.reload();
+	done();
+});
+
+gulp.task('watch', () => {
+	gulp.watch('main.html', ['html']);
+	gulp.watch('index.scss', ['css']);
+	gulp.watch('index.js', ['js']);
+
+	browserSync.init({
+		server: {
+			baseDir: "./"
+		}
+	});
+});

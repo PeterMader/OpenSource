@@ -1,8 +1,10 @@
 
 // variables
+$nav-height: 40px;
 $header-background-color: blue;
 $header-text-color: white;
 $main-header-background-color: darken($header-background-color, 10%);
+$nav-background-color: darken($header-background-color, 20%);
 
 // default styles
 h1,h2,h3 {
@@ -15,7 +17,30 @@ p {
 	line-height: 1.5;
 }
 
-// header
+// header nav
+
+header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: $nav-height;
+	width: 100%;
+	background: $nav-background-color;
+
+	h1 {
+		float: left;
+		color: white;
+		font-size: 1.1em;
+	}
+	nav {
+		float: right;
+		a {
+			color: lightblue;
+		}
+	}
+}
+
+// page headers
 
 %header {
 	width: 100%;
