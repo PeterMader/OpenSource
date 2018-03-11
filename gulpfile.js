@@ -15,7 +15,7 @@ const cssnano = require('cssnano');
 const browserSync = require('browser-sync').create();
 
 
-gulp.task('default', ['html', 'css', 'js']);
+gulp.task('default', ['html', 'css']);
 
 gulp.task('html', done => {
 	fs.writeFileSync(
@@ -42,15 +42,15 @@ gulp.task('css', () =>
 		.pipe(browserSync.stream())
 );
 
-gulp.task('js', done => {
+gulp.task('reload', done => {
 	browserSync.reload();
 	done();
 });
 
 gulp.task('watch', () => {
-	gulp.watch('main.html', ['html']);
+	gulp.watch('main.html', ['html', 'reload']);
 	gulp.watch('index.scss', ['css']);
-	gulp.watch('index.js', ['js']);
+	gulp.watch('index.js', ['reload']);
 
 	browserSync.init({
 		server: {

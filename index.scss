@@ -1,26 +1,53 @@
 
 // variables
+
+$base-color: blue;
+
 $nav-height: 40px;
-$header-background-color: blue;
+$nav-background-color: darken($base-color, 10%);
+
+$nav-link-color: lighten(lightblue, 10%);
+$nav-link-padding: ($nav-height - 18px) / 2;
+$nav-link-hover-color: lighten($nav-link-color, 15%);
+$nav-link-hover-background: darken($nav-background-color, 5%);
+
+$header-background-color: $base-color;
 $header-text-color: white;
-$main-header-background-color: darken($header-background-color, 10%);
-$nav-background-color: darken($header-background-color, 20%);
+$header-font: 'Open Sans', sans-serif;
+$header-font-weight: 300;
+
+$border-color: lighten($base-color, 10%);
+$text-padding: 8px;
+$body-copy: 'Roboto', sans-serif;
+$body-copy-size: 1.05em;
+$body-copy-line-height: 1.6;
 
 // default styles
+* {
+	box-sizing: border-box;
+	font-family: $body-copy;
+}
+%text-padding {
+	padding-left: $text-padding;
+	padding-right: $text-padding;
+}
 h1,h2,h3 {
-	font-family: 'Open Sans', sans-serif;
-	font-weight: 300;
+	@extend %text-padding;
+	font-family: $header-font;
+	font-weight: $header-font-weight;
 	margin: 0;
 }
-p {
-	font-family: 'Roboto', sans-serif;
-	line-height: 1.5;
+p, li {
+	@extend %text-padding;
+	font-size: $body-copy-size;
+	line-height: $body-copy-line-height;
 }
 
 // header nav
 
 header {
 	position: fixed;
+	z-index: 1;
 	top: 0;
 	left: 0;
 	height: $nav-height;
@@ -30,12 +57,25 @@ header {
 	h1 {
 		float: left;
 		color: white;
-		font-size: 1.1em;
+		font-size: 1.3em;
+		padding: 5px 10px;
 	}
 	nav {
 		float: right;
+
 		a {
-			color: lightblue;
+			color: $nav-link-color;
+			display: block;
+			float: left;
+			padding: $nav-link-padding;
+			padding-top: $nav-link-padding - 1px;
+			padding-bottom: $nav-link-padding + 1px;
+
+			&:hover {
+				background: $nav-link-hover-background;
+				background: linear-gradient(to bottom, lighten($nav-link-hover-background, 1%) 0%, darken($nav-link-hover-background, 1%) 100%);
+				color: $nav-link-hover-color;
+			}
 		}
 	}
 }
@@ -47,13 +87,54 @@ header {
 	height: 60%;
 	background: $header-background-color;
 	color: $header-text-color;
+	padding: 15% 0;
+	padding: 20vmin 0;
+	text-align: center;
 }
 
 .main-header {
 	@extend %header;
-	background: $main-header-background-color;
+	background: $header-background-color;
+	font-size: 2.6rem;
+
+	.main-header-text {
+		margin-left: 1em;
+	}
+
+	.slideshow-wrapper {
+		min-width: 5em;
+		display: inline-block;
+		text-align: left;
+
+		.company-slideshow {
+			background: $nav-background-color;
+			background: linear-gradient(to bottom, lighten($nav-background-color, 2%) 0%, darken($nav-background-color, 3%) 100%);
+			border-radius: 6px;
+			padding: 4px 8px;
+			border: 1px solid $border-color;
+		}
+	}
 }
 
 .header {
 	@extend %header;
+	font-size: 2.2rem;
+}
+
+// main
+
+main {
+	position: absolute;
+	top: $nav-height;
+	left: 0;
+	width: 100%;
+
+	article {
+		padding: 0 15%;
+	}
+
+	.mission-statement {
+		width: 100%;
+		font-size: 1.3em;
+	}
 }
