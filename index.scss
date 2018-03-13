@@ -104,7 +104,7 @@ header {
 	}
 
 	@include mq(tablet) {
-		height: $nav-height + 32px;
+		height: auto;
 
 		h1 {
 			width: 100%;
@@ -122,6 +122,14 @@ header {
 				padding-top: $nav-link-padding - 3px;
 				padding-bottom: $nav-link-padding - 1px;
 			}
+		}
+	}
+	@include mq(phone) {
+		h1 {
+			font-size: 1rem;
+		}
+		a {
+			font-size: 0.8rem;
 		}
 	}
 }
