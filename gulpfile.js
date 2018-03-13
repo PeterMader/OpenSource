@@ -10,7 +10,7 @@ const htmlmin = require('html-minifier').minify;
 const sass = require('gulp-sass');
 const postcss = require('gulp-postcss');
 const autoprefixer = require('autoprefixer');
-const cssnano = require('cssnano');
+const cleanCSS = require('gulp-clean-css');
 
 const browserSync = require('browser-sync').create();
 
@@ -32,12 +32,12 @@ gulp.task('html', done => {
 });
 
 gulp.task('css', () =>
-	gulp.src('index.scss')
+	gulp.src('*.scss')
 		.pipe(sass())
 		.pipe(postcss([
 			autoprefixer({browsers: ['last 2 versions', '> 1%']}),
-			cssnano()
 		]))
+		.pipe(cleanCSS({compatibility: 'ie8'}))
 		.pipe(gulp.dest('.'))
 		.pipe(browserSync.stream())
 );
@@ -49,7 +49,7 @@ gulp.task('reload', done => {
 
 gulp.task('watch', () => {
 	gulp.watch('main.html', ['html', 'reload']);
-	gulp.watch('index.scss', ['css']);
+	gulp.watch('*.scss', ['css']);
 	gulp.watch('index.js', ['reload']);
 
 	browserSync.init({
