@@ -198,11 +198,18 @@ main {
 	left: 0;
 	width: 100%;
 
+	@include mq(tablet) {
+		top: $nav-height + 30px;
+	}
+	@include mq(phone) {
+		top: $nav-height + 22px;
+	}
+
 	article {
 		padding: 20px 15%;
 
 		@include mq(tablet) {
-			padding: 16px 10%;
+			padding: 16px 6%;
 		}
 		@include mq(phone) {
 			padding: 8px;
