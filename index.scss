@@ -22,6 +22,19 @@ $body-copy: 'Roboto', sans-serif;
 $body-copy-size: 1.05em;
 $body-copy-line-height: 1.6;
 
+// media queries
+@mixin mq($point) {
+	@if $point == desktop {
+		@media (min-width: 1000px) { @content; }
+	}
+	@else if $point == tablet {
+		@media (max-width: 999px) { @content; }
+	}
+	@else if $point == phone {
+		@media (max-width: 600px) { @content; }
+	}
+}
+
 // default styles
 * {
 	box-sizing: border-box;
@@ -68,8 +81,8 @@ header {
 	h1 {
 		float: left;
 		color: white;
-		font-size: 1.3em;
-		padding: 5px 10px;
+		font-size: 1.3rem;
+		padding: 6px 10px;
 	}
 	nav {
 		float: right;
@@ -78,7 +91,7 @@ header {
 			color: $nav-link-color;
 			display: block;
 			float: left;
-			padding: $nav-link-padding;
+			padding: $nav-link-padding / 2 + 1px;
 			padding-top: $nav-link-padding - 1px;
 			padding-bottom: $nav-link-padding + 1px;
 
@@ -87,6 +100,36 @@ header {
 				background: linear-gradient(to bottom, lighten($nav-link-hover-background, 1%) 0%, darken($nav-link-hover-background, 1%) 100%);
 				color: $nav-link-hover-color;
 			}
+		}
+	}
+
+	@include mq(tablet) {
+		height: auto;
+
+		h1 {
+			width: 100%;
+			text-align: center;
+		}
+		text-align: center;
+
+		nav {
+			width: 100%;
+			text-align: center;
+
+			a {
+				display: inline-block;
+				float: none;
+				padding-top: $nav-link-padding - 3px;
+				padding-bottom: $nav-link-padding - 1px;
+			}
+		}
+	}
+	@include mq(phone) {
+		h1 {
+			font-size: 1rem;
+		}
+		a {
+			font-size: 0.8rem;
 		}
 	}
 }
@@ -98,9 +141,17 @@ header {
 	height: 60%;
 	background: $header-background-color;
 	color: $header-text-color;
-	padding: 15% 0;
+	padding: 15% 2em;
 	padding: 20vmin 0;
 	text-align: center;
+	font-size: 2.2rem;
+
+	@include mq(tablet) {
+		font-size: 1.9rem;
+	}
+	@include mq(phone) {
+		font-size: 1.6rem;
+	}
 }
 
 .main-header {
@@ -108,28 +159,35 @@ header {
 	background: $header-background-color;
 	font-size: 2.6rem;
 
-	.main-header-text {
-		margin-left: 1em;
+	.company-slideshow {
+		background: $nav-background-color;
+		background: linear-gradient(to bottom, lighten($nav-background-color, 2%) 0%, darken($nav-background-color, 3%) 100%);
+		border-radius: 6px;
+		padding: 4px 8px;
+		border: 1px solid $border-color;
 	}
 
-	.slideshow-wrapper {
-		min-width: 5em;
-		display: inline-block;
-		text-align: left;
-
-		.company-slideshow {
-			background: $nav-background-color;
-			background: linear-gradient(to bottom, lighten($nav-background-color, 2%) 0%, darken($nav-background-color, 3%) 100%);
-			border-radius: 6px;
-			padding: 4px 8px;
-			border: 1px solid $border-color;
+	@include mq(desktop) {
+		.main-header-text {
+			margin-left: 1em;
 		}
+
+		.slideshow-wrapper {
+			min-width: 5em;
+			display: inline-block;
+			text-align: left;
+		}
+	}
+	@include mq(tablet) {
+		font-size: 2.3rem;
+	}
+	@include mq(phone) {
+		font-size: 1.9rem;
 	}
 }
 
 .header {
 	@extend %header;
-	font-size: 2.2rem;
 }
 
 // main
@@ -140,8 +198,22 @@ main {
 	left: 0;
 	width: 100%;
 
+	@include mq(tablet) {
+		top: $nav-height + 30px;
+	}
+	@include mq(phone) {
+		top: $nav-height + 22px;
+	}
+
 	article {
 		padding: 20px 15%;
+
+		@include mq(tablet) {
+			padding: 16px 6%;
+		}
+		@include mq(phone) {
+			padding: 8px;
+		}
 	}
 
 	.mission-statement {
