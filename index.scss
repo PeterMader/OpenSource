@@ -238,33 +238,20 @@ main {
 		}
 	}
 
-	%info-triangle {
+	.info-triangle {
 		position: absolute;
 		top: 0;
 		height: 100%;
 		left: 40%;
 		width: 20%;
 	}
-	.info-triangle-right {
-		@extend %info-triangle;
-		background: linear-gradient(to right bottom, transparent 49.5%, pink 50%)
-	}
-	.info-triangle-left {
-		@extend %info-triangle;
-		background: linear-gradient(to left bottom, transparent 49.5%, pink 50%)
-	}
 
+	$info-background-color: #AAA;
 	.info {
 		position: absolute;
 		top: 0;
-		&.right {
-			right: 0;
-		}
-		&.left {
-			left: 0;
-		}
 		width: 40%;
-		background: pink;
+		background: $info-background-color;
 		height: 100%;
 		padding: 1em;
 		h3 {
@@ -291,6 +278,8 @@ main {
 			}
 		}
 		.replaces {
+			margin-bottom: 10px;
+
 			.replaces-text {
 				float: left;
 				margin-top: 12px;
@@ -321,6 +310,23 @@ main {
 			.clear {
 				clear: both;
 			}
+		}
+	}
+
+	&.left {
+		.info-triangle {
+			background: linear-gradient(to left bottom, transparent 49.5%, $info-background-color 50%);
+		}
+		.info {
+			left: 0;
+		}
+	}
+	&.right {
+		.info-triangle {
+			background: linear-gradient(to right bottom, transparent 49.5%, $info-background-color 50%);
+		}
+		.info {
+			right: 0;
 		}
 	}
 }
