@@ -338,7 +338,7 @@ main {
 		.info, .info-container {
 			transform: scaleX(-1);
 		}
-		.info {
+		.info-container {
 			left: 0;
 			&::after {
 				left: 0;
@@ -349,7 +349,7 @@ main {
 		.info-triangle {
 			background: linear-gradient(to right bottom, transparent 49.5%, $info-background-color 50%);
 		}
-		.info {
+		.info-container {
 			right: 0;
 			&::after {
 				right: 0;
