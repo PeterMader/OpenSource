@@ -1,9 +1,12 @@
 Software Library:
 Linux - make it gud
-Click on each section to expand
-Screenshots - kmail and kubuntu in particular (do on desktop at lower resolution)
+Click on each section to expand, at least for mobile
+Screenshots - thunderbird and kubuntu in particular (do on desktop at lower resolution)
 Mobile friendly
 Text background colours
 
 Wall of Text:
 Make it shorter, with emphasis used to break up the text and draw attention.
+
+Other:
+favicon

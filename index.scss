@@ -246,13 +246,25 @@ main {
 	}
 
 	$info-background-color: #AAA;
-	.info {
+	.info-container {
 		position: absolute;
 		top: 0;
 		width: 40%;
 		background: $info-background-color;
 		height: 100%;
 		padding: 1em;
+		overflow-y: auto;
+		overflow-x: hidden;
+
+		&::after {
+			content: '';
+			position: absolute;
+			bottom: 0;
+			width: 147%;
+			height: 40px;
+			background: linear-gradient(to bottom, transparent 0%, $info-background-color 100%);
+		}
+
 		h3 {
 			color: purple;
 			display: inline;
@@ -323,8 +335,14 @@ main {
 		.info-triangle {
 			background: linear-gradient(to left bottom, transparent 49.5%, $info-background-color 50%);
 		}
+		.info, .info-container {
+			transform: scaleX(-1);
+		}
 		.info {
 			left: 0;
+			&::after {
+				left: 0;
+			}
 		}
 	}
 	&.right {
@@ -333,6 +351,9 @@ main {
 		}
 		.info {
 			right: 0;
+			&::after {
+				right: 0;
+			}
 		}
 	}
 }
