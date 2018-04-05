@@ -10,3 +10,4 @@ Make it shorter, with emphasis used to break up the text and draw attention.
 
 Other:
 favicon
+rest of head
