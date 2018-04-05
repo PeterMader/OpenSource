@@ -18,6 +18,7 @@ $header-font-weight: 300;
 
 $info-background-color: lighten(lightblue, 5%);
 $mobile-info-height: 400px;
+$mobile-software-gap: 8px;
 
 $border-color: lighten($base-color, 10%);
 $text-padding: 8px;
@@ -370,27 +371,42 @@ main {
 }
 
 @include mq(tablet) {
-
-	.software-block.right .info-triangle {
-		//
-	}
-	.software-block.left .info-triangle {
-		//
-	}
-
 	.software-block {
-		margin-bottom: $mobile-info-height;
+		margin-bottom: $mobile-info-height + $mobile-software-gap;
+
+		.info-container::before {
+			content: '';
+			position: absolute;
+			box-sizing: border-box;
+			top: 100%;
+			height: $mobile-software-gap;
+			width: 100%;
+			left: 0;
+			border-top: 2px solid lighten($header-background-color, 20%);
+			background: lighten($info-background-color, 20%);
+		}
 
 		.info-container {
 			width: 100%;
 			top: 100%;
 			height: $mobile-info-height;
+			.info-subcontainer {
+				overflow-y: visible;
+			}
 		}
 		.info-triangle {
 			top: 90%;
 			width: 100%;
 			left: 0%;
 			height: 10%;
+		}
+		&.left {
+			.info-triangle {
+				background: linear-gradient(to right bottom, transparent 49.5%, $info-background-color 50%);
+			}
+			.info, .info-subcontainer {
+				transform: none;
+			}
 		}
 	}
 }
