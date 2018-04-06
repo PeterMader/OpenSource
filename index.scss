@@ -8,8 +8,8 @@ $nav-background-color: darken($base-color, 10%);
 
 $nav-link-color: lighten(lightblue, 10%);
 $nav-link-padding: ($nav-height - 18px) / 2;
-$nav-link-hover-color: lighten($nav-link-color, 15%);
-$nav-link-hover-background: darken($nav-background-color, 5%);
+$nav-link-hover-color: lighten($nav-link-color, 20%);
+$nav-link-hover-background: darken($nav-background-color, 8%);
 
 $header-background-color: $base-color;
 $header-text-color: white;
@@ -103,7 +103,7 @@ header {
 			padding-top: $nav-link-padding - 1px;
 			padding-bottom: $nav-link-padding + 1px;
 
-			&:hover {
+			&:hover, &.active {
 				background: $nav-link-hover-background;
 				background: linear-gradient(to bottom, lighten($nav-link-hover-background, 1%) 0%, darken($nav-link-hover-background, 1%) 100%);
 				color: $nav-link-hover-color;
