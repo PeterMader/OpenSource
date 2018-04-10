@@ -37,15 +37,19 @@ document.addEventListener('scroll', function () {
 	if (document.getElementById('/more-info/').getBoundingClientRect().y < 100) {
 		highlighted = 3;
 		setHash('/more-info/');
+		document.title = "More Information";
 	} else if (document.getElementById('/free-software-library/').getBoundingClientRect().y < 100) {
 		highlighted = 2;
 		setHash('/free-software-library/');
+		document.title = "Free and Open Source Software Library";
 	} else if (document.getElementById('/open-source/').getBoundingClientRect().y < 100) {
 		highlighted = 1;
 		setHash('/open-source/');
+		document.title = "The Advantages of Free Software";
 	} else if (document.getElementById('/proprietary-software/').getBoundingClientRect().y < 100) {
 		highlighted = 0;
 		setHash('/proprietary-software/');
+		document.title = "The Problem With Proprietary Software";
 	}
 
 	for (el of Array.from(document.querySelectorAll('header nav a'))) {
