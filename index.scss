@@ -67,6 +67,9 @@ p, li {
 	line-height: $body-copy-line-height;
 }
 li {
+	margin-bottom: 10px;
+}
+article li {
 	margin-bottom: 20px;
 }
 strong {
