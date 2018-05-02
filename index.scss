@@ -4,14 +4,14 @@
 $base-color: blue;
 
 $nav-height: 40px;
-$nav-background-color: darken($base-color, 10%);
+$nav-background-color: lighten($base-color, 5%);
 
 $nav-link-color: lighten(lightblue, 10%);
 $nav-link-padding: ($nav-height - 18px) / 2;
 $nav-link-hover-color: lighten($nav-link-color, 20%);
 $nav-link-hover-background: darken($nav-background-color, 8%);
 
-$header-background-color: $base-color;
+$header-background-color: lighten($base-color, 10%);
 $header-text-color: white;
 $header-font: 'Open Sans', sans-serif;
 $header-font-weight: 300;
@@ -20,7 +20,7 @@ $info-background-color: lighten(lightblue, 5%);
 $mobile-info-height: 400px;
 $mobile-software-gap: 8px;
 
-$border-color: lighten($base-color, 10%);
+$border-color: lighten($base-color, 15%);
 $text-padding: 8px;
 $body-copy: 'Roboto', sans-serif;
 $body-copy-size: 1.05em;
