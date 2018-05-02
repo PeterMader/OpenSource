@@ -24,10 +24,12 @@ setInterval(function () {
 var highlighted = 0;
 
 function setHash (hash) {
-	if(history.pushState) {
-		history.pushState(null, null, '#'+hash);
-	} else {
-		location.hash = '#'+hash;
+	if (location.hash !== '#' + hash) {
+		if (history.pushState) {
+			history.pushState(null, null, '#'+hash);
+		} else {
+			location.hash = '#'+hash;
+		}
 	}
 }
 setHash('/proprietary-software/');
