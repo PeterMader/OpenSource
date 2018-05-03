@@ -1,7 +1,7 @@
 
 // variables
 
-$base-color: blue;
+$base-color: desaturate(blue, 30%);
 
 $nav-height: 40px;
 $nav-background-color: lighten($base-color, 5%);
