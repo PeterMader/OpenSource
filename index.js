@@ -8,8 +8,7 @@ var slideshows = Array.from(
 		'Google',
 		'Microsoft',
 		'Facebook',
-		'Apple',
-		'Amazon'
+		'Apple'
 	],
 	index = 0;
 
