@@ -1,2 +1,3 @@
-linux - make it gud
-screenshots - thunderbird and kubuntu in particular (do on desktop at lower resolution)
+replace thunderbird with vlc
+add more sources for sweeping claims
+fix scrolling on mobile
