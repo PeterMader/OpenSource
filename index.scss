@@ -204,6 +204,26 @@ header {
 	}
 }
 
+.translations {
+	$img-height: 24px;
+	position: absolute;
+	top: 40% 4em;
+	top: 54vmin 0;
+	right: 0;
+
+	img {
+		height: $img-height;
+		transform: translateY(-$img-height);
+		opacity: 0.6;
+	}
+	img.active {
+		opacity: 1;
+	}
+	img:hover {
+		opacity: 1;
+	}
+}
+
 .header {
 	@extend %header;
 }
